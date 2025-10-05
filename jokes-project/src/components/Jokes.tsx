@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getOneJoke, type Joke } from "../services/jokes";
 import { Page, Card, Title, Quote, Row, Btn, Danger, Loading, JokeArea, Spinner } from "./Jokes.styles";
 
-const BLOCKED: string[] = ["Hacking", "sex", "Nicole Kidman", "Chuck Norris"];
+const BLOCKED: string[] = ["Hacking", "sex", "Nicole Kidman", "Chuck Norris", " l41d"];
 
 export async function fetchCleanJoke(BLOCKED: string[], maxTries = 20): Promise<Joke> {
     let lastErr: unknown;
